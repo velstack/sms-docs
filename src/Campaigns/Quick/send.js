@@ -3,7 +3,7 @@ import axios from 'axios';
 const data = {
     title: "Announcement",
     sender: "VELSTACK",
-    recipient: "0205550368",
+    recipient: ["0205550368"],
     message: 'First API message from Velstack'
 }
 
@@ -12,6 +12,7 @@ const data = {
         Authorization: "Bearer " + "API_KEY",
         Accept: "application/json",
     }
+
   }).then((response) => {
        alert('Message sent successfully')
 

@@ -1,4 +1,4 @@
-<p align="center"><a href="https://mnotify.com" target="_blank"><img src="https://sms.velstack.com/build/images/velstack/logo-white.png" width="200" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://velstack.com" target="_blank"><img src="https://sms.velstack.com/build/images/velstack/logo-white.png" width="200" alt="Logo"></a></p>
 
 <p align="center">
  <a href=" "><img alt="Packagist Version (custom server)" src="https://img.shields.io/github/package-json/v/velstack/docs/main"></a>
@@ -43,7 +43,7 @@ All http responses are in json format that's every request to our endpoint must 
   curl https://sms.velstack.com/api/quick/sms
   -H "Authorization: Bearer YOUR_API_KEY"
   -H "Accept: application/json"
-  -d '{ sender : "Velstack", recipient: "0205550368", message: "sent from the velstack api" }'
+  -d '{ sender : "Velstack", recipient: ["0205550368"], message: "sent from the velstack api" }'
   -X POST
  
 ```
@@ -82,8 +82,8 @@ All http responses are in json format that's every request to our endpoint must 
 ```json
 {
   "status": false,
-  "message": "Service unavailable",
-  "code": 503
+  "message": "Data validation errors",
+  "code": 422
 }
 ```
 
@@ -135,8 +135,8 @@ All http responses are in json format that's every request to our endpoint must 
 ```json
 {
   "status": false,
-  "message": "Service unavailable",
-  "code": 503
+  "message": "Data validation error",
+  "code": 422
 }
 ```
 
@@ -437,8 +437,7 @@ Register a new sender id
     }
   ]
 }
-```
-
+``` 
 
 
 <p align="center">

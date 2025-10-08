@@ -11,7 +11,7 @@
   data = {
   "title": "Information"
   "sender": "Velstack",
-  "recipient": "020XXXXXXXX",
+  "recipient": ["020XXXXXXXX"],
   "message": "We have a meeting at 2:00pm",
   }
 

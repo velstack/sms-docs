@@ -3,7 +3,7 @@ const https = require('https')
 const params = JSON.stringify({
     "title": "Information",
     "sender": "Velstack",
-    "recipient": "0205550368",
+    "recipient": ["0205550368"],
     "message": "Message from Velstack API"
 })
 

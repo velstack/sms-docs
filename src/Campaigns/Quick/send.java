@@ -6,7 +6,7 @@ AsyncHttpClient client = new DefaultAsyncHttpClient();
   .setHeader("Authorization", "Bearer API_KEY")
   .setBody("title", "Information")
     .setBody("sender", "velstack")
-    .setBody("recipient", "0205550368")
+    .setBody("recipient", ["0205550368"])
     .setBody("message", "The message content")
   .execute()
   .toCompletableFuture()

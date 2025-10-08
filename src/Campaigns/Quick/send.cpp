@@ -9,6 +9,6 @@
   curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
 
   curl_easy_setopt(hnd, CURLOPT_POSTFIELDS,
-      "title=string&information&sender_id=string&velstack&message=string&message_content&recipient=string&0205550368");
+      "title=string&information&sender_id=string&velstack&message=string&message_content&recipient=array&0205550368");
 
   CURLcode ret = curl_easy_perform(hnd);

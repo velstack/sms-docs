@@ -4,7 +4,7 @@ $url = "https://sms.velstack.com/api/quick/sms";
 $data = [
     'title' => 'Information',
     'sender' => "Velstack",
-    'recipient' => "0205550368",
+    'recipient' => ["0205550368"],
     'message' => 'The message content'
 ];
 
@@ -12,7 +12,6 @@ $fields_string = http_build_query($data);
 
 //open connection
 $ch = curl_init();
-
 //set the url, number of POST vars, POST data
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, true);
